@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Wave Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Waving Flag GIF</h1>
+
+        <div class="upload-section">
+            <label for="imageUpload" class="upload-button">
+                Upload Image
+                <input type="file" id="imageUpload" accept="image/*">
+            </label>
+            <p id="fileNameDisplay">No image selected</p>
+        </div>
+
+        <div class="image-preview-section">
+            <h2>Image Preview</h2>
+            <canvas id="originalImageCanvas"></canvas>
+        </div>
+
+        <button id="generateGifButton" disabled>Generate Waving Flag</button>
+
+        <div class="gif-output-section">
+            <h2>Generated GIF</h2>
+            <img id="generatedGif" src="" alt="Generated Waving Flag GIF">
+            <a id="downloadGifButton" class="download-button" download="waving_flag.gif" style="display: none;">Download GIF</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
